@@ -1,0 +1,164 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F2F5F9;
+}
+.main{
+    width: 300px;
+    height: 500px;
+    border: 0.1px solid #C8C8C8;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    background: #fff;
+    box-shadow: 1px 3px 37px 14px rgba(102,102,102,0.35);
+
+}
+.login_section{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* -----------------------------------------login anime --------------------------------*/
+.login_anime{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    background: #1BAAED;
+}
+.head{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #EFB391;
+    position: absolute;
+    top: 32px;
+    left: 55px;
+    box-shadow: 1px -9px 0px 14px #663926;
+}
+.main_body{
+    width: 110px;
+    height: 150px;
+    border-radius: 40px;
+    background: rgb(160, 95, 154);
+    position: absolute;
+    bottom: -90px;
+    left: 45px;
+}
+.neck{
+    width: 20px;
+    height: 30px;
+    background-color: #EFB391;
+    position: absolute;
+    bottom: 50px;
+    left: 90px;
+}
+.hair{
+    width: 130px;
+    height: 60px;
+    background: #663926;
+    clip-path: polygon(16% 13%, 46% 2%, 70% 6%, 86% 23%, 86% 82%, 76% 48%, 72% 76%, 57% 52%, 53% 85%, 40% 53%, 29% 83%, 24% 47%, 13% 88%);
+    position: absolute;
+    top: -5px;
+    left: -20px;
+}
+.eye{
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: black;
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    animation: my_anime 2s infinite ;
+    
+}
+.eye2{
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: black;
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    animation: my_anime 2s infinite ;
+}
+@keyframes my_anime {
+    0%,90%,100%{
+        height: 10px;
+    }
+    95%{
+        height: 0px;
+    }
+}
+.mouth{
+    width: 25px;
+    height: 25px;
+    background: #EFB391;
+    border-bottom: 3px solid red;
+    border-radius: 10px;
+    position: absolute;
+    position: absolute;
+    top: 50px;
+    left: 33px;
+
+}
+.ears{
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    top: 70px;
+}
+.ears::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #EFB391;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 46px;
+
+}
+.ears::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #EFB391;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: -3px;
+}
+/* ----------------------------------------------input------------------------------ */
+.my_btn{
+    width: 260px;
+    height: 35px;
+}
+.log_btn{
+    width: 260px;
+    height: 35px;
+    background: #306191;
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    border: none;
+}
+.login_section input{
+    margin: 12px 0;
+}
+.login_section a{
+    color: #306191;
+    font-weight: 100;
+    margin-left:70px;
+}
